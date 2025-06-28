@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Blog</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #e0f2f1; /* light teal */
+      color: #263238; /* dark blue-gray */
+    }
+
+    header {
+      background: #006064; /* deep cyan */
+      color: white;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd600; /* yellow accent */
+    }
+
+    .container {
+      display: flex;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+      gap: 2rem;
+    }
+
+    main {
+      flex: 3;
+    }
+
+    article {
+      background: white;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    article:hover {
+      transform: translateY(-5px);
+    }
+
+    article h2 {
+      margin-top: 0;
+      color: #00796b;
+    }
+
+    aside {
+      flex: 1;
+      background: #ffffff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    aside h3 {
+      color: #004d40;
+    }
+
+    aside ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    aside li {
+      margin-bottom: 0.5rem;
+      color: #455a64;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #004d40;
+      color: white;
+      margin-top: 2rem;
+    }
+
+    /* Cool scroll animation */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #b2dfdb;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #00695c;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #004d40;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Blog</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <main>
+      <article>
+        <h2>First Blog Post</h2>
+        <p><strong>Posted on:</strong> June 9, 2025</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet...</p>
+      </article>
+
+      <article>
+        <h2>Another Blog Entry</h2>
+        <p><strong>Posted on:</strong> June 8, 2025</p>
+        <p>Aliquam erat volutpat. Suspendisse potenti. Morbi vel risus nec velit feugiat lacinia...</p>
+      </article>
+    </main>
+
+    <aside id="about">
+      <h3>About Me</h3>
+      <p>This is a short bio or description of the blog author.</p>
+
+      <h3>Categories</h3>
+      <ul>
+        <li>Tech</li>
+        <li>Life</li>
+        <li>Travel</li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer id="contact">
+    <p>&copy; 2025 My Blog. All rights reserved.</p>
+  </footer>
+</body>
+</html>
